@@ -4,19 +4,20 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#fbf5e9">
-<meta name="description" content="plush paradise is a quick claw machine mini game for the in-between moments. Every round fits in five minutes or less, with no stress and no homework.">
-<title>plush paradise — A five-minute claw machine game</title>
+<meta name="description" content="plush paradise is a cozy claw machine game that opens onto Tokyo. Win plush in five-minute rounds, then walk out into a pixel-art Shibuya that follows your clock, and ride the train to Harajuku, Akihabara and Ikebukuro.">
+<title>plush paradise — A claw machine that opens onto Tokyo</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23fbf5e9'/%3E%3Cpath d='M32 12v16M22 22h20M24 28l-8 16 6 8M40 28l8 16-6 8M32 28v20' stroke='%23405851' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<a class="skip" href="#machine">Skip to the machine</a>
+<a class="skip" href="#play">Skip to how it plays</a>
 <header class="nav">
   <a class="brand" href="#top" aria-label="plush paradise home"><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 8v12M16 16h16M18 22l-6 12 5 6M30 22l6 12-5 6M24 22v16" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>plush paradise</a>
   <nav class="nav-links" aria-label="Page">
-    <a href="#moments-of-day">When to play</a>
-    <a href="#prizes">Prizes</a>
-    <a href="#moments">Gameplay</a>
+    <a href="#play">Play</a>
+    <a href="#city">The city</a>
+    <a href="#stages">Stages</a>
+    <a href="#collect">Collect</a>
     <a href="#screens">Screenshots</a>
     <a href="support.html">Support</a>
   </nav>
@@ -24,118 +25,210 @@
 
 <main id="top">
   <section class="hero">
-    <div class="hero-bg" aria-hidden="true"><img src="media/hero.jpg" alt=""></div>
-    <div class="hero-inner">
-      <p class="kicker">A five-minute mini game &middot; iPhone &amp; iPad</p>
-      <h1>plush paradise</h1>
+    <div class="hero-copy">
+      <p class="kicker">A cozy claw game &middot; iPhone &amp; iPad</p>
+      <h1>A claw machine<br>that opens onto <span class="hl">Tokyo.</span></h1>
       <p class="tag">A little skill. A little luck.</p>
-      <p class="lede">A quick, cozy game for the waiting bits of your day: the bus stop, the train platform, a study break. Drop a token, line up the claw, and see what you win. Every round is done in five minutes or less, and there is nothing to think hard about.</p>
+      <p class="lede">Drop a token, line up the claw and win a little plush friend in five minutes or less. Find one of every Shibuya toy and she walks out of the arcade into a pixel-art street that follows your clock: neon at night, fog in the morning, golden light at sunset.</p>
       <div class="hero-actions">
-        <button class="store" type="button">Download on the App Store</button>
-        <a class="btn ghost" href="#screens">See it in action</a>
+        <button class="store" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.2-2.8.8-3.5.8-.7 0-1.9-.8-3-.8-1.6 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.5-1-2.5-3.7zM14.2 5.8c.6-.8 1.1-1.8 1-2.8-.9 0-2 .6-2.6 1.4-.6.7-1.1 1.7-1 2.7 1 .1 2-.5 2.6-1.3z"/></svg>Download on the App Store</button>
+        <a class="btn ghost" href="#city">Explore the city</a>
       </div>
       <ul class="badges" aria-label="Highlights">
-        <li>5 minutes or less</li><li>One-thumb play</li><li>Easy to pick up, easy to put down</li>
+        <li>5-minute rounds</li><li>4 Tokyo stages</li><li>32 plush to collect</li><li>9 languages</li>
       </ul>
     </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="device phone tilt-l"><img src="media/iphone-portrait-street.jpg" width="1170" height="2532" alt=""></div>
+      <div class="device phone tilt-r back"><img src="media/iphone-portrait-machine.jpg" width="1170" height="2532" alt=""></div>
+      <img class="float f1" src="media/toys/dragon.png" width="180" height="180" alt="">
+      <img class="float f2" src="media/toys/unicorn.png" width="180" height="180" alt="">
+      <img class="float f3" src="media/toys/kaiju.png" width="180" height="180" alt="">
+      <img class="float f4" src="media/toys/penguin.png" width="180" height="180" alt="">
+      <span class="spark s1">✦</span><span class="spark s2">♡</span><span class="spark s3">✦</span>
+    </div>
   </section>
 
-  <ul class="facts" aria-label="Why it fits your day">
+  <ul class="facts" aria-label="At a glance">
     <li><strong>5 min</strong><span>or less for a whole round</span></li>
-    <li><strong>0</strong><span>rules to memorize. Aim, twist, grab</span></li>
-    <li><strong>1</strong><span>token, one drop. No long sessions</span></li>
-    <li><strong>8</strong><span>little toys to collect over time</span></li>
-    <li><strong>20</strong><span>free tokens when a machine is fresh</span></li>
+    <li><strong>4</strong><span>stages across Tokyo, each with its own machine</span></li>
+    <li><strong>32</strong><span>plush friends to collect</span></li>
+    <li><strong>24 h</strong><span>street lighting that follows your device clock</span></li>
+    <li><strong>9</strong><span>languages, picked up from your device</span></li>
   </ul>
 
-  <section class="section" id="moments-of-day">
-    <p class="kicker">Made for the in-between</p>
-    <h2>Five minutes. Zero stress.</h2>
-    <p class="intro">plush paradise is built for the gaps in your day. Pick it up, play a quick round, and put it away whenever your ride shows up. It never asks you to catch up, keep a streak, or remember where you left off.</p>
-    <div class="orders when">
-      <article><em>WAITING</em><h3>At the stop</h3><p>The bus is eight minutes out. That is plenty for a round or two.</p></article>
-      <article><em>COMMUTE</em><h3>On the train</h3><p>Play with one thumb. The joystick and Grab sit right where your hand rests.</p></article>
-      <article><em>STUDY BREAK</em><h3>Between chapters</h3><p>Rest your brain, not your focus. A few drops, then back to the books.</p></article>
-      <article><em>ANYTIME</em><h3>Just a minute</h3><p>Nothing to unlock or grind. Open it, play, close it.</p></article>
-    </div>
-  </section>
-
-  <section class="section" id="machine">
-    <div class="split">
-      <div class="copy">
-        <p class="kicker">Pick up and play</p>
-        <h2>Light on the brain. Big on the cute.</h2>
-        <p class="intro">A cheerful little arcade with a pile of plush toys and one claw. You decide where to drop and how to twist. The game handles the rest, so you can play while half paying attention to the departure board.</p>
-        <a class="btn ghost" href="#screens">Browse screenshots</a>
-      </div>
-      <figure>
-        <button class="shot frame" type="button" data-shot="media/token.jpg" data-caption="A token is in. Nineteen remain. Grab is unlocked and the Stardust Dragon waits on the cabinet card.">
-          <img src="media/token.jpg" width="1440" height="900" alt="The plush paradise claw machine with a token inserted and Grab ready.">
-        </button>
-      </figure>
-    </div>
-  </section>
-
-  <section class="section">
+  <section class="section" id="play">
     <p class="kicker">How it plays</p>
     <h2>Four easy moves. One drop.</h2>
-    <div class="orders">
-      <article><em>01</em><h3>Insert</h3><p>One token buys one try. Start with 20, or pick 10, 40, or 60.</p></article>
-      <article><em>02</em><h3>Aim</h3><p>Steer in eight directions. Switch views and zoom to judge the depth.</p></article>
-      <article><em>03</em><h3>Twist</h3><p>Rotate the claw in 15&deg; steps. Claw Assist shows your grip odds.</p></article>
-      <article><em>04</em><h3>Grab</h3><p>The claw drops, closes, lifts, and heads home on its own.</p></article>
+    <p class="intro">The claw game is built for the in-between bits of your day: the bus stop, the train platform, a study break. Play with one thumb, put it away whenever your ride shows up. Your progress saves itself.</p>
+    <div class="steps">
+      <article><i aria-hidden="true">01</i><h3>Insert</h3><p>One token buys one try. Free play starts with 20 tokens.</p></article>
+      <article><i aria-hidden="true">02</i><h3>Aim</h3><p>Steer in eight directions. Orbit and zoom the camera to judge the depth.</p></article>
+      <article><i aria-hidden="true">03</i><h3>Twist</h3><p>Rotate the claw in 15&deg; steps. Claw Assist shows your grip odds.</p></article>
+      <article><i aria-hidden="true">04</i><h3>Grab</h3><p>The claw drops, closes, lifts and comes home on its own.</p></article>
+    </div>
+    <div class="split">
+      <figure>
+        <button class="shot frame" type="button" data-shot="media/machine-shibuya.jpg" data-caption="The Paradise Claw in Shibuya. Light toys sit on top; the Stardust Dragon waits at the bottom.">
+          <img src="media/machine-shibuya.jpg" width="1440" height="900" alt="The Paradise Claw machine in Shibuya, full of plush toys." loading="lazy">
+        </button>
+      </figure>
+      <div class="copy">
+        <p class="kicker">Clear a path</p>
+        <h3 class="h3big">Light toys on top. Treasures underneath.</h3>
+        <p>Every machine starts with 41 toys in three layers. Cheap, light plush cover the heavy, valuable ones, so each win opens the way a little further. Misses nudge the pile. The luck is rolled once when you press Grab, so reloading never changes the result.</p>
+      </div>
     </div>
   </section>
 
-  <section class="section" id="moments">
-    <p class="kicker">In motion</p>
-    <h2>Every drop is a small story.</h2>
+  <section class="section walkout">
+    <p class="kicker">One of every friend</p>
+    <h2>Then she walks out the door.</h2>
+    <p class="intro">Collect one of each Shibuya plush and the whole collection tucks into her bag. The automatic doors slide open, light floods in, and she steps out onto the street. The camera takes a little tour of the neighborhood, and from then on the city is yours.</p>
+    <div class="duo">
+      <figure><button class="shot frame" type="button" data-shot="media/walkout.jpg" data-caption="Inside the arcade, the full collection circles her and drops into her bag."><img src="media/walkout.jpg" width="1440" height="900" alt="Pixel-art arcade interior with the girl and her plush toys circling her." loading="lazy"></button><figcaption><b>1</b> The bag is full</figcaption></figure>
+      <figure><button class="shot frame" type="button" data-shot="media/walkout-street.jpg" data-caption="The doors open and Shibuya is revealed."><img src="media/walkout-street.jpg" width="1440" height="900" alt="The Shibuya street revealed for the first time." loading="lazy"></button><figcaption><b>2</b> Shibuya opens up</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="section city" id="city">
+    <div class="city-head">
+      <div>
+        <p class="kicker">A street that keeps your time</p>
+        <h2>Morning fog. Neon nights.</h2>
+        <p class="intro">The street map is drawn in hand-made pixel art and lit by the clock on your device. Street lights, lit windows and shop neon come on after dark. Mornings roll in with fog, noon casts hard little shadows, and sunset paints everyone gold.</p>
+      </div>
+      <div class="tod" role="group" aria-label="Time of day">
+        <button type="button" data-tod="morning">☁ Morning</button>
+        <button type="button" data-tod="day">☀ Day</button>
+        <button type="button" data-tod="sunset">✺ Sunset</button>
+        <button type="button" data-tod="night">☾ Night</button>
+      </div>
+    </div>
+    <figure class="tod-stage">
+      <img id="tod-img" src="media/street-sunset.jpg" width="1440" height="900" alt="The Shibuya street map at golden hour." loading="lazy">
+      <figcaption id="tod-cap">Golden hour. Long shadows stretch across the scramble crossing.</figcaption>
+    </figure>
+    <p class="note">Right now it's <b id="tod-now">…</b> where you are, so that's the look the game would show you.</p>
+  </section>
+
+  <section class="section" id="street">
+    <p class="kicker">Life on the street</p>
+    <h2>Talk, trade, ride and rest.</h2>
+    <p class="intro">Walk with the same joystick. Press A to talk to people, step into shops, or go home. Traffic stops for you, and the scramble crossing chirps when everyone can cross.</p>
     <div class="bento">
-      <figure class="b-big">
-        <button class="shot frame" type="button" data-shot="media/grab-drop.jpg" data-caption="The claw lowers over the pile. Nobody can nudge it now.">
-          <img src="media/grab-drop.jpg" width="1440" height="900" alt="The claw lowering into the pile of plush toys.">
-        </button>
-        <figcaption>The drop</figcaption>
-      </figure>
-      <figure>
-        <button class="shot frame" type="button" data-shot="media/claw-assist.jpg" data-caption="Claw Assist reads the toy under the claw: weight, value, and a grip estimate.">
-          <img src="media/claw-assist.jpg" width="1440" height="900" alt="Claw Assist showing 77 percent grip on a Buttercup Duck.">
-        </button>
-        <figcaption>Claw Assist</figcaption>
-      </figure>
-      <figure>
-        <button class="shot frame" type="button" data-shot="media/view-left.jpg" data-caption="Orbit to the left side to check how the toys are stacked.">
-          <img src="media/view-left.jpg" width="1440" height="900" alt="Left side view of the claw machine.">
-        </button>
-        <figcaption>Side view</figcaption>
-      </figure>
-      <figure>
-        <button class="shot frame" type="button" data-shot="media/view-right.jpg" data-caption="The right-hand camera shows the other half of the pile.">
-          <img src="media/view-right.jpg" width="1440" height="900" alt="Right side view of the claw machine.">
-        </button>
-        <figcaption>Other side</figcaption>
-      </figure>
-      <figure>
-        <button class="shot frame" type="button" data-shot="media/grab-lift.jpg" data-caption="Lifting. The position is locked and the claw does the rest.">
-          <img src="media/grab-lift.jpg" width="1440" height="900" alt="The claw lifting out of the pile.">
-        </button>
-        <figcaption>The lift</figcaption>
-      </figure>
+      <figure class="b-big"><button class="shot frame" type="button" data-shot="media/talk.jpg" data-caption="Neighbors share tips that follow your progress, the time of day and the stage you're on."><img src="media/talk.jpg" width="1440" height="900" alt="The girl talking with a tourist on the Shibuya street at night." loading="lazy"></button><figcaption><b>Neighbors with tips</b>An officer, a claw veteran, a busker, a grandmother and more. Their advice changes with your progress and the hour.</figcaption></figure>
+      <figure><button class="shot frame" type="button" data-shot="media/toyswap.jpg" data-caption="The Toy Swap buys duplicates. The first of each friend always stays with you."><img src="media/toyswap.jpg" width="1440" height="900" alt="The Toy Swap shop panel listing extra plush for sale." loading="lazy"></button><figcaption><b>Toy Swap</b>Sell extra plush for yen. The first of each friend is never for sale.</figcaption></figure>
+      <figure><button class="shot frame" type="button" data-shot="media/train.jpg" data-caption="A ticket reveals the next stage. The train pulls in, she hops on, and the next city appears."><img src="media/train.jpg" width="1440" height="900" alt="The girl on a station platform as a commuter train arrives at golden hour." loading="lazy"></button><figcaption><b>Ride the train</b>Buy a ticket with your yen to reveal the next stage. Rides back are free.</figcaption></figure>
+      <figure><button class="shot frame" type="button" data-shot="media/nap-corner.jpg" data-caption="Bedtime: she tucks every plush she owns into the toy corner."><img src="media/nap-corner.jpg" width="1440" height="900" alt="The girl placing plush toys into a corner of her bedroom." loading="lazy"></button><figcaption><b>Home sweet home</b>Every plush goes to the toy corner before bed.</figcaption></figure>
+      <figure><button class="shot frame" type="button" data-shot="media/nap-sleep.jpg" data-caption="Lights off. She falls asleep hugging her rarest plush, and wakes up with a full pocket of tokens."><img src="media/nap-sleep.jpg" width="1440" height="900" alt="The girl asleep in bed hugging a plush toy in moonlight." loading="lazy"></button><figcaption><b>A good night's nap</b>She sleeps hugging her favorite, and wakes with tokens refilled.</figcaption></figure>
     </div>
   </section>
 
-  <section class="section" id="prizes">
+  <section class="section" id="stages">
+    <p class="kicker">Four stops on the line</p>
+    <h2>Every stage, a new machine.</h2>
+    <p class="intro">Each neighborhood has its own cabinet, its own eight plush and its own view out the back of the arcade. Later toys are worth more at the Toy Swap, which keeps the next fare within reach.</p>
+    <div class="stage-grid">
+      <article class="stage s-shibuya">
+        <button class="shot" type="button" data-shot="media/machine-shibuya.jpg" data-caption="Stage 1 · Shibuya · The Paradise Claw."><img src="media/machine-shibuya.jpg" width="1440" height="900" alt="The Paradise Claw in Shibuya." loading="lazy"></button>
+        <div class="stage-body">
+          <p class="stage-no">Stage 1 <span>渋谷</span></p>
+          <h3>Shibuya</h3>
+          <p>The Paradise Claw by the scramble crossing. The classic friends, from the Mochi Puff to the legendary Stardust Dragon.</p>
+          <div class="toys"><img src="media/toys/dragon.png" alt="Stardust Dragon" width="180" height="180" loading="lazy"><img src="media/toys/bear.png" alt="Crowned Honey Bear" width="180" height="180" loading="lazy"><img src="media/toys/bunny.png" alt="Moonbeam Bunny" width="180" height="180" loading="lazy"><img src="media/toys/axolotl.png" alt="Peachy Axolotl" width="180" height="180" loading="lazy"><img src="media/toys/dino.png" alt="Pistachio Dino" width="180" height="180" loading="lazy"><img src="media/toys/cat.png" alt="Strawberry Cat" width="180" height="180" loading="lazy"><img src="media/toys/duck.png" alt="Buttercup Duck" width="180" height="180" loading="lazy"><img src="media/toys/mochi.png" alt="Mochi Puff" width="180" height="180" loading="lazy"></div>
+          <p class="fare">Where it all starts</p>
+        </div>
+      </article>
+      <article class="stage s-harajuku">
+        <button class="shot" type="button" data-shot="media/machine-harajuku.jpg" data-caption="Stage 2 · Harajuku · The Harajuku Cabinet, under the Takeshita Street gate."><img src="media/machine-harajuku.jpg" width="1440" height="900" alt="The pink Harajuku Cabinet." loading="lazy"></button>
+        <div class="stage-body">
+          <p class="stage-no">Stage 2 <span>原宿</span></p>
+          <h3>Harajuku</h3>
+          <p>A pastel cabinet below the Takeshita Street gate, with the Meiji forest beyond. Sweets and street fashion, crowned by the Rainbow Unicorn.</p>
+          <div class="toys"><img src="media/toys/unicorn.png" alt="Rainbow Unicorn" width="180" height="180" loading="lazy"><img src="media/toys/lamb.png" alt="Lolita Lamb" width="180" height="180" loading="lazy"><img src="media/toys/poodle.png" alt="Bubblegum Poodle" width="180" height="180" loading="lazy"><img src="media/toys/crepe.png" alt="Strawberry Crepe" width="180" height="180" loading="lazy"><img src="media/toys/cloud.png" alt="Cotton Candy Cloud" width="180" height="180" loading="lazy"><img src="media/toys/hamster.png" alt="Macaron Hamster" width="180" height="180" loading="lazy"><img src="media/toys/donut.png" alt="Sprinkle Donut" width="180" height="180" loading="lazy"><img src="media/toys/chick.png" alt="Pom-Pom Chick" width="180" height="180" loading="lazy"></div>
+          <p class="fare">Ticket ¥1,000</p>
+        </div>
+      </article>
+      <article class="stage s-akihabara">
+        <button class="shot" type="button" data-shot="media/machine-akihabara.jpg" data-caption="Stage 3 · Akihabara · The Radio Cabinet in Electric Town."><img src="media/machine-akihabara.jpg" width="1440" height="900" alt="The navy and cyan Radio Cabinet in Akihabara." loading="lazy"></button>
+        <div class="stage-body">
+          <p class="stage-no">Stage 3 <span>秋葉原</span></p>
+          <h3>Akihabara</h3>
+          <p>The Radio Cabinet glows under Electric Town's signs and the rail bridge. Robots, games and gadgets, led by the heavy Mecha Kaiju.</p>
+          <div class="toys"><img src="media/toys/kaiju.png" alt="Mecha Kaiju" width="180" height="180" loading="lazy"><img src="media/toys/robopup.png" alt="Robo Pup" width="180" height="180" loading="lazy"><img src="media/toys/panda.png" alt="Ninja Panda" width="180" height="180" loading="lazy"><img src="media/toys/slime.png" alt="Pixel Slime" width="180" height="180" loading="lazy"><img src="media/toys/gamepad.png" alt="Game Pad Pal" width="180" height="180" loading="lazy"><img src="media/toys/battery.png" alt="Battery Buddy" width="180" height="180" loading="lazy"><img src="media/toys/capsule.png" alt="Gacha Capsule" width="180" height="180" loading="lazy"><img src="media/toys/ghost.png" alt="Floppy Ghost" width="180" height="180" loading="lazy"></div>
+          <p class="fare">Ticket ¥3,000</p>
+        </div>
+      </article>
+      <article class="stage s-ikebukuro">
+        <button class="shot" type="button" data-shot="media/machine-ikebukuro.jpg" data-caption="Stage 4 · Ikebukuro · The Sunshine Cabinet, under Sunshine 60."><img src="media/machine-ikebukuro.jpg" width="1440" height="900" alt="The ocean-blue Sunshine Cabinet in Ikebukuro." loading="lazy"></button>
+        <div class="stage-body">
+          <p class="stage-no">Stage 4 <span>池袋</span></p>
+          <h3>Ikebukuro</h3>
+          <p>The Sunshine Cabinet sits under the tower, with a rooftop aquarium and the good-luck owl nearby. Sea friends, topped by the flying Sky Penguin.</p>
+          <div class="toys"><img src="media/toys/penguin.png" alt="Sky Penguin" width="180" height="180" loading="lazy"><img src="media/toys/owl.png" alt="Ikefukuro Owl" width="180" height="180" loading="lazy"><img src="media/toys/otter.png" alt="Shell Otter" width="180" height="180" loading="lazy"><img src="media/toys/jelly.png" alt="Moon Jellyfish" width="180" height="180" loading="lazy"><img src="media/toys/seal.png" alt="Spotted Seal" width="180" height="180" loading="lazy"><img src="media/toys/fish.png" alt="Clownfish" width="180" height="180" loading="lazy"><img src="media/toys/starfish.png" alt="Sunny Starfish" width="180" height="180" loading="lazy"><img src="media/toys/octopus.png" alt="Little Octopus" width="180" height="180" loading="lazy"></div>
+          <p class="fare">Ticket ¥7,500</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="collect">
     <div class="split flip">
       <div class="copy">
         <p class="kicker">Something to come back to</p>
-        <h2>Collect them a few minutes at a time.</h2>
-        <p class="intro">Eight toys, from the common Mochi Puff to the legendary 820 gram Stardust Dragon worth $250 as a toy. Light ones sit on top, so clearing a path is the whole game. Toy values are fictional, and your shelf stays on your device.</p>
+        <h2>32 friends. A few minutes at a time.</h2>
+        <p class="intro">The prize book shows each machine's eight toys, rarest first, with their weight and the layer they start in. Keep the first of every friend on your shelf, trade the extras for train fare, and fill the book one short break at a time.</p>
+        <ul class="ticks">
+          <li>Saves itself, even if the app is closed mid-grab</li>
+          <li>A grab in the air resumes with the same result</li>
+          <li>Toy values are fictional. There are no cash prizes</li>
+        </ul>
       </div>
       <figure>
-        <button class="shot frame" type="button" data-shot="media/prizes.jpg" data-caption="The prize book. Eight toys, none collected yet.">
-          <img src="media/prizes.jpg" width="1440" height="900" alt="Prize book showing eight plush toys.">
+        <button class="shot frame" type="button" data-shot="media/book-harajuku.jpg" data-caption="The prize book for Harajuku's eight toys.">
+          <img src="media/book-harajuku.jpg" width="1440" height="900" alt="The prize book listing Harajuku's eight plush toys." loading="lazy">
         </button>
       </figure>
+    </div>
+  </section>
+
+  <section class="section langs">
+    <div class="split">
+      <figure class="lang-phone"><div class="device phone"><img src="media/iphone-japanese.jpg" width="1170" height="2532" alt="The street map in Japanese, with Grandma Ume giving a tip." loading="lazy"></div></figure>
+      <div class="copy">
+        <p class="kicker">Your language</p>
+        <h2>Nine languages, every line.</h2>
+        <p class="intro">Every button, toy, tip and conversation is translated. The game follows your device language, and you can switch any time in Settings.</p>
+        <ul class="lang-list">
+          <li lang="en">English</li><li lang="ja">日本語</li><li lang="zh-Hant">繁體中文</li><li lang="zh-Hans">简体中文</li><li lang="ko">한국어</li><li lang="vi">Tiếng Việt</li><li lang="ru">Русский</li><li lang="es">Español</li><li lang="it">Italiano</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="plans">
+    <p class="kicker">Free to play</p>
+    <h2>Play every day. Go further as a member.</h2>
+    <div class="plans">
+      <article class="plan">
+        <h3>Free play</h3>
+        <p class="plan-sub">The Paradise Claw in Shibuya</p>
+        <ul class="ticks">
+          <li>Up to 40 free tokens a day, back at midnight on your device</li>
+          <li>All eight Shibuya plush and the prize book</li>
+          <li>Progress saved on your device</li>
+        </ul>
+      </article>
+      <article class="plan member">
+        <h3>Membership</h3>
+        <p class="plan-sub">Optional in-app purchase</p>
+        <ul class="ticks">
+          <li>Restock any number of tokens, any time</li>
+          <li>Walk out onto the street: neighbors, the Toy Swap, the mart and home</li>
+          <li>Ride the train to Harajuku, Akihabara and Ikebukuro, and all 32 plush</li>
+        </ul>
+      </article>
     </div>
   </section>
 
@@ -147,63 +240,44 @@
       <button role="tab" id="tab-ipad" aria-controls="panel-ipad" aria-selected="false" tabindex="-1" type="button">iPad</button>
       <button role="tab" id="tab-desktop" aria-controls="panel-desktop" aria-selected="false" tabindex="-1" type="button">Desktop <span class="pill">Upcoming</span></button>
     </div>
-
     <div class="panel" role="tabpanel" id="panel-iphone" aria-labelledby="tab-iphone">
-      <p class="meta">Portrait is 1170&times;2532. Landscape is 2532&times;1170. Touch hints replace the keyboard hints.</p>
       <div class="phone-stage">
-        <figure class="bezel phone-port">
-          <button class="shot" type="button" data-shot="media/iphone-portrait-machine.jpg" data-caption="iPhone portrait, 1170×2532.">
-            <img src="media/iphone-portrait-machine.jpg" width="1170" height="2532" alt="iPhone portrait view of the plush paradise claw machine." loading="lazy">
-          </button>
-        </figure>
-        <figure class="bezel phone-land">
-          <button class="shot" type="button" data-shot="media/iphone-landscape-machine.jpg" data-caption="iPhone landscape, 2532×1170.">
-            <img src="media/iphone-landscape-machine.jpg" width="2532" height="1170" alt="iPhone landscape view of the plush paradise claw machine." loading="lazy">
-          </button>
-        </figure>
+        <figure class="device phone"><button class="shot" type="button" data-shot="media/iphone-portrait-street.jpg" data-caption="iPhone portrait: the street at night."><img src="media/iphone-portrait-street.jpg" width="1170" height="2532" alt="iPhone portrait: the Shibuya street at night." loading="lazy"></button></figure>
+        <figure class="device phone"><button class="shot" type="button" data-shot="media/iphone-portrait-machine.jpg" data-caption="iPhone portrait: the Harajuku Cabinet."><img src="media/iphone-portrait-machine.jpg" width="1170" height="2532" alt="iPhone portrait: the Harajuku Cabinet." loading="lazy"></button></figure>
+        <figure class="device phone-land"><button class="shot" type="button" data-shot="media/iphone-landscape-street.jpg" data-caption="iPhone landscape: the street at golden hour."><img src="media/iphone-landscape-street.jpg" width="2532" height="1170" alt="iPhone landscape: the street at golden hour." loading="lazy"></button></figure>
       </div>
     </div>
-
     <div class="panel" role="tabpanel" id="panel-ipad" aria-labelledby="tab-ipad" hidden>
-      <p class="meta">Landscape is 2048&times;1536. Portrait is 1536&times;2048. The joystick and Grab stay on screen with the toys.</p>
       <div class="ipad-stage">
-        <figure class="bezel ipad-land">
-          <button class="shot" type="button" data-shot="media/ipad-landscape-machine.jpg" data-caption="iPad landscape, 2048×1536.">
-            <img src="media/ipad-landscape-machine.jpg" width="2048" height="1536" alt="iPad landscape view of the plush paradise claw machine." loading="lazy">
-          </button>
-        </figure>
-        <figure class="bezel ipad-port">
-          <button class="shot" type="button" data-shot="media/ipad-portrait-machine.jpg" data-caption="iPad portrait, 1536×2048.">
-            <img src="media/ipad-portrait-machine.jpg" width="1536" height="2048" alt="iPad portrait view of the plush paradise claw machine." loading="lazy">
-          </button>
-        </figure>
+        <figure class="device ipad-land"><button class="shot" type="button" data-shot="media/ipad-landscape-street.jpg" data-caption="iPad landscape: a foggy morning in Shibuya."><img src="media/ipad-landscape-street.jpg" width="2048" height="1536" alt="iPad landscape: Shibuya on a foggy morning." loading="lazy"></button></figure>
+        <figure class="device ipad-port"><button class="shot" type="button" data-shot="media/ipad-portrait-machine.jpg" data-caption="iPad portrait: the Radio Cabinet in Akihabara."><img src="media/ipad-portrait-machine.jpg" width="1536" height="2048" alt="iPad portrait: the Radio Cabinet in Akihabara." loading="lazy"></button></figure>
       </div>
     </div>
-
     <div class="panel" role="tabpanel" id="panel-desktop" aria-labelledby="tab-desktop" hidden>
-      <p class="meta"><strong>Upcoming.</strong> The desktop version is still being tested and is not released yet. These frames are from the current build.</p>
+      <p class="meta"><strong>Upcoming.</strong> The desktop version is still being tested. These frames are from the current build.</p>
       <div class="gallery">
-        <figure><button class="shot frame" type="button" data-shot="media/machine.jpg" data-caption="Desktop, 1440×900. Twenty tokens, Grab locked."><img src="media/machine.jpg" width="1440" height="900" alt="Desktop view of the machine ready for a token." loading="lazy"></button><figcaption class="caption">Ready</figcaption></figure>
-        <figure><button class="shot frame" type="button" data-shot="media/how.jpg" data-caption="Desktop, 1440×900. How to play."><img src="media/how.jpg" width="1440" height="900" alt="Desktop how to play card." loading="lazy"></button><figcaption class="caption">How to play</figcaption></figure>
-        <figure><button class="shot frame" type="button" data-shot="media/settings.jpg" data-caption="Desktop, 1440×900. Settings."><img src="media/settings.jpg" width="1440" height="900" alt="Desktop settings panel." loading="lazy"></button><figcaption class="caption">Settings</figcaption></figure>
+        <figure><button class="shot frame" type="button" data-shot="media/street-night.jpg" data-caption="Desktop: Shibuya at night."><img src="media/street-night.jpg" width="1440" height="900" alt="Desktop: the Shibuya street at night." loading="lazy"></button></figure>
+        <figure><button class="shot frame" type="button" data-shot="media/machine-ikebukuro.jpg" data-caption="Desktop: the Sunshine Cabinet."><img src="media/machine-ikebukuro.jpg" width="1440" height="900" alt="Desktop: the Sunshine Cabinet in Ikebukuro." loading="lazy"></button></figure>
+        <figure><button class="shot frame" type="button" data-shot="media/station.jpg" data-caption="Desktop: buying a ticket at Shibuya Station."><img src="media/station.jpg" width="1440" height="900" alt="Desktop: the Shibuya Station ticket panel." loading="lazy"></button></figure>
       </div>
     </div>
   </section>
 
   <section class="cta">
+    <div class="cta-toys" aria-hidden="true"><img src="media/toys/mochi.png" alt="" width="180" height="180" loading="lazy"><img src="media/toys/chick.png" alt="" width="180" height="180" loading="lazy"><img src="media/toys/ghost.png" alt="" width="180" height="180" loading="lazy"><img src="media/toys/octopus.png" alt="" width="180" height="180" loading="lazy"></div>
     <h2>Got five minutes?</h2>
-    <p>Play a round while you wait. Tokens are free and toy values are fictional.</p>
-    <button class="store" type="button">Download on the App Store</button>
+    <p>Win a plush while you wait. Then, when you're ready, step outside.</p>
+    <button class="store" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.2-2.8.8-3.5.8-.7 0-1.9-.8-3-.8-1.6 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.5-1-2.5-3.7zM14.2 5.8c.6-.8 1.1-1.8 1-2.8-.9 0-2 .6-2.6 1.4-.6.7-1.1 1.7-1 2.7 1 .1 2-.5 2.6-1.3z"/></svg>Download on the App Store</button>
   </section>
 </main>
 
 <footer>
-  <p>plush paradise is a quick claw machine game for short breaks. Tokens are free, toy values are fictional, and the shelf stays on the device.</p>
+  <p>plush paradise is a cozy claw machine game with a little Tokyo to explore. Toy values are fictional, there are no cash prizes, and your shelf stays on your device.</p>
   <p class="legal-links"><a href="privacy.html">Privacy Policy</a> <a href="terms.html">Terms of Service</a> <a href="support.html">Support</a></p>
 </footer>
 
 <dialog id="viewer">
-  <form method="dialog"><button type="submit">Close</button></form>
+  <form method="dialog"><button type="submit" aria-label="Close">Close</button></form>
   <img alt="">
   <p></p>
 </dialog>
@@ -220,6 +294,9 @@ document.body.addEventListener('click', event => {
   cap.textContent = shot.dataset.caption || view.alt;
   viewer.showModal();
 });
+viewer.addEventListener('click', e => { if (e.target === viewer) viewer.close(); });
+
+// Screenshot tabs.
 const tabs = [...document.querySelectorAll('[role="tab"]')];
 function selectTab(tab) {
   tabs.forEach(t => {
@@ -238,6 +315,27 @@ tabs.forEach((t, i) => {
     n.focus(); selectTab(n);
   });
 });
+
+// Time of day: the same four looks as the game, starting with the visitor's own clock.
+const TOD = {
+  morning: ['morning fog', 'Morning. Fog drifts over the crossing and the street wakes up slowly.'],
+  day: ['daytime', 'Midday. Bright sun and short, sharp shadows under every tree and lamp.'],
+  sunset: ['golden hour', 'Golden hour. Long shadows stretch across the scramble crossing.'],
+  night: ['night', 'Night. Street lights, lit windows, headlights and neon signs.']
+};
+const todImg = document.getElementById('tod-img'), todCap = document.getElementById('tod-cap');
+const todButtons = [...document.querySelectorAll('[data-tod]')];
+function showTod(id) {
+  todImg.src = `media/street-${id}.jpg`;
+  todImg.alt = `The Shibuya street map: ${TOD[id][0]}.`;
+  todCap.textContent = TOD[id][1];
+  todButtons.forEach(b => b.setAttribute('aria-pressed', b.dataset.tod === id));
+}
+todButtons.forEach(b => b.addEventListener('click', () => showTod(b.dataset.tod)));
+const h = new Date().getHours() + new Date().getMinutes() / 60;
+const now = h >= 19.5 || h < 5 ? 'night' : h < 9 ? 'morning' : h < 16.5 ? 'day' : 'sunset';
+document.getElementById('tod-now').textContent = TOD[now][0];
+showTod(now);
 </script>
 </body>
 </html>
