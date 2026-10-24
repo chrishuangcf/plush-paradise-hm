@@ -31,7 +31,7 @@
       <p class="tag">A little skill. A little luck.</p>
       <p class="lede">Drop a token, line up the claw and win a little plush friend in five minutes or less. Find one of every Shibuya toy and she walks out of the arcade into a pixel-art street that follows your clock: neon at night, fog in the morning, golden light at sunset.</p>
       <div class="hero-actions">
-        <button class="store" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.2-2.8.8-3.5.8-.7 0-1.9-.8-3-.8-1.6 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.5-1-2.5-3.7zM14.2 5.8c.6-.8 1.1-1.8 1-2.8-.9 0-2 .6-2.6 1.4-.6.7-1.1 1.7-1 2.7 1 .1 2-.5 2.6-1.3z"/></svg>Download on the App Store</button>
+        <a class="store" href="https://apps.apple.com/us/app/plush-paradise/id6819133750"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.2-2.8.8-3.5.8-.7 0-1.9-.8-3-.8-1.6 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.5-1-2.5-3.7zM14.2 5.8c.6-.8 1.1-1.8 1-2.8-.9 0-2 .6-2.6 1.4-.6.7-1.1 1.7-1 2.7 1 .1 2-.5 2.6-1.3z"/></svg>Download on the App Store</a>
         <a class="btn ghost" href="#city">Explore the city</a>
       </div>
       <ul class="badges" aria-label="Highlights">
@@ -128,7 +128,7 @@
   <section class="section" id="stages">
     <p class="kicker">Four stops on the line</p>
     <h2>Every stage, a new machine.</h2>
-    <p class="intro">Each neighborhood has its own cabinet, its own eight plush and its own view out the back of the arcade. Later toys are worth more at the Toy Swap, which keeps the next fare within reach.</p>
+    <p class="intro">Each neighborhood has its own cabinet and its own eight plush. Start in Shibuya, then ride the line to find out who's waiting.</p>
     <div class="stage-grid">
       <article class="stage s-shibuya">
         <button class="shot" type="button" data-shot="media/machine-shibuya.jpg" data-caption="Stage 1 · Shibuya · The Paradise Claw."><img src="media/machine-shibuya.jpg" width="1440" height="900" alt="The Paradise Claw in Shibuya." loading="lazy"></button>
@@ -141,32 +141,32 @@
         </div>
       </article>
       <article class="stage s-harajuku">
-        <button class="shot" type="button" data-shot="media/machine-harajuku.jpg" data-caption="Stage 2 · Harajuku · The Harajuku Cabinet, under the Takeshita Street gate."><img src="media/machine-harajuku.jpg" width="1440" height="900" alt="The pink Harajuku Cabinet." loading="lazy"></button>
+        <div class="stage-locked" aria-hidden="true"><span>?</span></div>
         <div class="stage-body">
           <p class="stage-no">Stage 2 <span>原宿</span></p>
           <h3>Harajuku</h3>
-          <p>A pastel cabinet below the Takeshita Street gate, with the Meiji forest beyond. Sweets and street fashion, crowned by the Rainbow Unicorn.</p>
-          <div class="toys"><img src="media/toys/unicorn.png" alt="Rainbow Unicorn" width="180" height="180" loading="lazy"><img src="media/toys/lamb.png" alt="Lolita Lamb" width="180" height="180" loading="lazy"><img src="media/toys/poodle.png" alt="Bubblegum Poodle" width="180" height="180" loading="lazy"><img src="media/toys/crepe.png" alt="Strawberry Crepe" width="180" height="180" loading="lazy"><img src="media/toys/cloud.png" alt="Cotton Candy Cloud" width="180" height="180" loading="lazy"><img src="media/toys/hamster.png" alt="Macaron Hamster" width="180" height="180" loading="lazy"><img src="media/toys/donut.png" alt="Sprinkle Donut" width="180" height="180" loading="lazy"><img src="media/toys/chick.png" alt="Pom-Pom Chick" width="180" height="180" loading="lazy"></div>
+          <p>A pastel cabinet below the Takeshita Street gate. Eight new friends are waiting for you.</p>
+          <div class="toys locked" role="img" aria-label="Eight plush toys, still a secret"><span class="mystery" aria-hidden="true">?</span><span class="mystery" aria-hidden="true">?</span><span class="mystery" aria-hidden="true">?</span><span class="mystery" aria-hidden="true">?</span><span class="mystery" aria-hidden="true">?</span><span class="mystery" aria-hidden="true">?</span><span class="mystery" aria-hidden="true">?</span><span class="mystery" aria-hidden="true">?</span></div>
           <p class="fare">Ticket ¥1,000</p>
         </div>
       </article>
       <article class="stage s-akihabara">
-        <button class="shot" type="button" data-shot="media/machine-akihabara.jpg" data-caption="Stage 3 · Akihabara · The Radio Cabinet in Electric Town."><img src="media/machine-akihabara.jpg" width="1440" height="900" alt="The navy and cyan Radio Cabinet in Akihabara." loading="lazy"></button>
+        <div class="stage-locked" aria-hidden="true"><span>?</span></div>
         <div class="stage-body">
           <p class="stage-no">Stage 3 <span>秋葉原</span></p>
           <h3>Akihabara</h3>
-          <p>The Radio Cabinet glows under Electric Town's signs and the rail bridge. Robots, games and gadgets, led by the heavy Mecha Kaiju.</p>
-          <div class="toys"><img src="media/toys/kaiju.png" alt="Mecha Kaiju" width="180" height="180" loading="lazy"><img src="media/toys/robopup.png" alt="Robo Pup" width="180" height="180" loading="lazy"><img src="media/toys/panda.png" alt="Ninja Panda" width="180" height="180" loading="lazy"><img src="media/toys/slime.png" alt="Pixel Slime" width="180" height="180" loading="lazy"><img src="media/toys/gamepad.png" alt="Game Pad Pal" width="180" height="180" loading="lazy"><img src="media/toys/battery.png" alt="Battery Buddy" width="180" height="180" loading="lazy"><img src="media/toys/capsule.png" alt="Gacha Capsule" width="180" height="180" loading="lazy"><img src="media/toys/ghost.png" alt="Floppy Ghost" width="180" height="180" loading="lazy"></div>
+          <p>The Radio Cabinet glows under Electric Town's signs. Eight new friends are waiting for you.</p>
+          <div class="toys locked" role="img" aria-label="Eight plush toys, still a secret"><span class="mystery" aria-hidden="true">?</span><span class="mystery" aria-hidden="true">?</span><span class="mystery" aria-hidden="true">?</span><span class="mystery" aria-hidden="true">?</span><span class="mystery" aria-hidden="true">?</span><span class="mystery" aria-hidden="true">?</span><span class="mystery" aria-hidden="true">?</span><span class="mystery" aria-hidden="true">?</span></div>
           <p class="fare">Ticket ¥3,000</p>
         </div>
       </article>
       <article class="stage s-ikebukuro">
-        <button class="shot" type="button" data-shot="media/machine-ikebukuro.jpg" data-caption="Stage 4 · Ikebukuro · The Sunshine Cabinet, under Sunshine 60."><img src="media/machine-ikebukuro.jpg" width="1440" height="900" alt="The ocean-blue Sunshine Cabinet in Ikebukuro." loading="lazy"></button>
+        <div class="stage-locked" aria-hidden="true"><span>?</span></div>
         <div class="stage-body">
           <p class="stage-no">Stage 4 <span>池袋</span></p>
           <h3>Ikebukuro</h3>
-          <p>The Sunshine Cabinet sits under the tower, with a rooftop aquarium and the good-luck owl nearby. Sea friends, topped by the flying Sky Penguin.</p>
-          <div class="toys"><img src="media/toys/penguin.png" alt="Sky Penguin" width="180" height="180" loading="lazy"><img src="media/toys/owl.png" alt="Ikefukuro Owl" width="180" height="180" loading="lazy"><img src="media/toys/otter.png" alt="Shell Otter" width="180" height="180" loading="lazy"><img src="media/toys/jelly.png" alt="Moon Jellyfish" width="180" height="180" loading="lazy"><img src="media/toys/seal.png" alt="Spotted Seal" width="180" height="180" loading="lazy"><img src="media/toys/fish.png" alt="Clownfish" width="180" height="180" loading="lazy"><img src="media/toys/starfish.png" alt="Sunny Starfish" width="180" height="180" loading="lazy"><img src="media/toys/octopus.png" alt="Little Octopus" width="180" height="180" loading="lazy"></div>
+          <p>The Sunshine Cabinet sits under the tower. Eight new friends are waiting for you.</p>
+          <div class="toys locked" role="img" aria-label="Eight plush toys, still a secret"><span class="mystery" aria-hidden="true">?</span><span class="mystery" aria-hidden="true">?</span><span class="mystery" aria-hidden="true">?</span><span class="mystery" aria-hidden="true">?</span><span class="mystery" aria-hidden="true">?</span><span class="mystery" aria-hidden="true">?</span><span class="mystery" aria-hidden="true">?</span><span class="mystery" aria-hidden="true">?</span></div>
           <p class="fare">Ticket ¥7,500</p>
         </div>
       </article>
@@ -263,11 +263,23 @@
     </div>
   </section>
 
+  <section class="section" id="travel">
+    <div class="travel">
+      <p class="kicker">Planning the real trip?</p>
+      <h2>Love Tokyo? Go see it.</h2>
+      <p class="intro">Shibuya, Harajuku, Akihabara and Ikebukuro are real places, and they're even better in person. Vacay Trip Planner helps you build your Japan itinerary, from the first idea to the last train.</p>
+      <div class="travel-actions">
+        <a class="btn" href="https://apps.apple.com/us/app/vacay-trip-planer/id6806172396" target="_blank" rel="noopener">Download Vacay on the App Store</a>
+        <a class="btn ghost" href="https://chrishuangcf.github.io/vacay-trip-planner/" target="_blank" rel="noopener">Learn more about Vacay</a>
+      </div>
+    </div>
+  </section>
+
   <section class="cta">
     <div class="cta-toys" aria-hidden="true"><img src="media/toys/mochi.png" alt="" width="180" height="180" loading="lazy"><img src="media/toys/chick.png" alt="" width="180" height="180" loading="lazy"><img src="media/toys/ghost.png" alt="" width="180" height="180" loading="lazy"><img src="media/toys/octopus.png" alt="" width="180" height="180" loading="lazy"></div>
     <h2>Got five minutes?</h2>
     <p>Win a plush while you wait. Then, when you're ready, step outside.</p>
-    <button class="store" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.2-2.8.8-3.5.8-.7 0-1.9-.8-3-.8-1.6 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.5-1-2.5-3.7zM14.2 5.8c.6-.8 1.1-1.8 1-2.8-.9 0-2 .6-2.6 1.4-.6.7-1.1 1.7-1 2.7 1 .1 2-.5 2.6-1.3z"/></svg>Download on the App Store</button>
+    <a class="store" href="https://apps.apple.com/us/app/plush-paradise/id6819133750"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.2-2.8.8-3.5.8-.7 0-1.9-.8-3-.8-1.6 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.5-1-2.5-3.7zM14.2 5.8c.6-.8 1.1-1.8 1-2.8-.9 0-2 .6-2.6 1.4-.6.7-1.1 1.7-1 2.7 1 .1 2-.5 2.6-1.3z"/></svg>Download on the App Store</a>
   </section>
 </main>
 
